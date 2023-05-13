@@ -1,14 +1,15 @@
-import { Component, EventEmitter, Input, OnInit, Output, TemplateRef, Inject, LOCALE_ID, NgZone } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, EventEmitter, Input, OnInit, Output, TemplateRef, Inject, LOCALE_ID, NgZone } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { CalendarService } from './calendar.service';
-import SwiperCore from 'swiper';
+
 import { IonicSlides } from '@ionic/angular';
 import { IEvent, CalendarMode, QueryMode, Step, IMonthViewDisplayEventTemplateContext, IMonthViewEventDetailTemplateContext, IDisplayWeekViewHeader, IDisplayAllDayEvent, IDisplayEvent, IWeekViewAllDayEventSectionTemplateContext, IDayViewAllDayEventSectionTemplateContext, IWeekViewNormalEventSectionTemplateContext, IDayViewNormalEventSectionTemplateContext, IDateFormatter, IRange, ITimeSelected } from './calendar.interface';
 
-SwiperCore.use([IonicSlides]);
+
 
 
 @Component({
+   
     selector: 'calendar',
     template: `
         <ng-template #monthviewDefaultDisplayEventTemplate let-view="view" let-row="row" let-col="col">

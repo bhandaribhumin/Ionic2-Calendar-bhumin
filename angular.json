@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": ".",
   "projects": {
-    "Ionic2-Calendar": {
+    "Ionic2-Calendar-16": {
       "projectType": "library",
       "root": "",
       "sourceRoot": "src",
@@ -23,5 +23,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": false
   }
 }

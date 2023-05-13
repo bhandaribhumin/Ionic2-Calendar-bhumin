@@ -1,7 +1,7 @@
 {
     "compilerOptions": {
         "paths": {
-            "Ionic2-Calendar": [
+            "Ionic2-Calendar-16": [
               "dist"
             ]
           },
